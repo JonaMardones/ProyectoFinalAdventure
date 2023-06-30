@@ -1,0 +1,230 @@
+@use 'variables';
+
+/*Servicios*/
+
+#TituloServicios {
+	background-color: rgba(13, 27, 48, 0.705);
+	color: variables.$texto;
+	border-radius: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.ConteServ {
+	width: 100%;
+	border-radius: 30px;
+	padding-top: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.iframegrande {
+	background-color: rgba(31, 30, 30, 0.842);
+	width: 580px;
+	height: 335px;
+	border-radius: 30px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ContenidoLate {
+	width: 700px;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.Late1 {
+	width: 300px;
+	height: 350px;
+	background-color: rgba(31, 30, 30, 0.842);
+	border-radius: 30px;
+}
+
+#imagenlate1 {
+	width: 250px;
+	border: 10px solid white;
+}
+
+h3#Titulo-Paisaje {
+	color: variables.$texto;
+}
+
+p#Texto-Paisajes {
+	color: variables.$texto;
+	padding-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#imagenlate2 {
+	width: 250px;
+	border: 10px solid white;
+}
+
+.Late2 {
+	width: 300px;
+	height: 350px;
+	background-color: rgba(31, 30, 30, 0.842);
+	border-radius: 30px;
+}
+
+h3#Titulo-Natu {
+	color: variables.$texto;
+}
+
+p#Texto-Natu {
+	color: variables.$texto;
+	padding-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.ContenidoBajo {
+	width: calc(100%)-10;
+}
+
+.Servicios1 {
+	width: 100%;
+	height: 350px;
+	border-radius: 30px;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.cuadernos {
+	background-color: rgba(31, 30, 30, 0.842);
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+}
+
+#imagenlibros {
+	width: 250px;
+	border: 10px solid white;
+}
+
+h3#Titulo-Cuadernos {
+	color: variables.$texto;
+}
+
+p#Texto-Cuadernos {
+	color: variables.$texto;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Modelo {
+	background-color: rgba(31, 30, 30, 0.842);
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+}
+
+#ImgModelo {
+	width: 250px;
+	border: 10px solid white;
+}
+
+h3#Titulo-Modelo {
+	color: variables.$texto;
+}
+
+p#Texto-Modelo {
+	color: variables.$texto;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.exposiciones {
+	background-color: rgba(31, 30, 30, 0.842);
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+}
+
+#ImgExpo {
+	width: 250px;
+	border: 10px solid white;
+}
+
+h3#Titulo-Exposiciones {
+	color: variables.$texto;
+}
+
+p#Texto-Exposiciones {
+	color: variables.$texto;
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.bebes {
+	background-color: rgba(31, 30, 30, 0.842);
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+}
+
+#bebes {
+	width: 250px;
+	border: 10px solid white;
+}
+
+h3#Titulo-Bebe {
+	color: variables.$texto;
+}
+
+p#Texto-Bebe {
+	color: variables.$texto;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+	.ContenidoLate {
+	  /*width: 90%;*/
+	  width: calc(90%)-10;
+	  height: 10%;
+	  margin: 2%;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 10px;
+	  grid-template-rows: 20px;
+	  flex-wrap: wrap;
+	  margin-bottom: 30px;
+	  margin-top: 10px;
+	}
+	#Titulo-Paisaje{
+		font-size: 20px;
+	}
+	#Titulo-Natu{
+		font-size: 20px;
+	}
+	.Servicios1{
+	  width: 90%;
+	  height: 10%;
+	  margin: 2%;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 10px;
+	  grid-template-rows: 0px;
+	  flex-wrap: wrap;
+	 
+	}
+  }

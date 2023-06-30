@@ -1,0 +1,208 @@
+@use 'variables';
+
+body {
+  background-image: url(../galeria/fondofondo.jpeg);
+}
+
+.header {
+  background-color: rgba(13, 27, 48, 0.705);
+  border-radius: 30px;
+}
+
+#logo {
+  font-family: variables.$font-family_1;
+  font-size: 2em;
+  color: variables.$titulo;
+}
+
+.nave-item {
+  list-style: none;
+  display: flex;
+  border-radius: 30px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+  -webkit-transition: box-shadow 0.4s;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.no-a {
+  color: variables.$texto;
+  text-decoration: none;
+ 
+}
+
+.navebar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nave-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nave-link {
+  transition: 0.7s ease;
+
+  &:hover {
+    color: variables.$titulo;
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.barra {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: variables.$texto;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active {
+    .barra {
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  .nave-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(13, 27, 48, 0.705);
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nave-item {
+    margin: 16px 0;
+  }
+
+  .nave-menu.active {
+    left: 0;
+  }
+}
+
+
+span {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1em;
+  color: #fff;
+}
+
+.contenedor {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(245, 245, 220, 0.233);
+  height: 500px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+#ima1 {
+  width: 100%;
+  height: 500px;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.conte {
+  width: 400px;
+  height: 500;
+  background-color: rgba(13, 27, 48, 0.705);
+  border-radius: 0px 30px 30px 0px;
+}
+
+#saludo {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  font-family: "Permanent Marker", cursive;
+  background-color: rgba(35, 66, 165, 0.555);
+}
+
+#texto {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .contenedor {
+    flex-direction: column;
+    margin-bottom: 130px;
+  }
+
+  #ima1 {
+    border-radius: 0;
+    width: auto;
+  }
+
+  .conte {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  #saludo {
+    margin-top: 5px;
+  }
+
+  #texto {
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
