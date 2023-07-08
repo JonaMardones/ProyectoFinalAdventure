@@ -1,7 +1,6 @@
 @use 'variables';
 
 
-/* CONTACT INFO */
 .Conten_Contact {
 	max-width: 1170px;
 	margin-left: auto;
@@ -17,57 +16,11 @@
 	font-size: 3em;
 	color: variables.$texto;
 }
-.Contacto_Form {
-	background-color: rgba(31, 30, 30, 0.842);
-}
+
 .Formu_Formu {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	form {
-		button {
-			width: 100%;
-			padding: .7em;
-			border: none;
-			background: none;
-			outline: 0;
-			color: variables.$texto;
-			border-bottom: 1px solid #d63031;
-			background: #B70E21;
-			border: 0;
-			text-transform: uppercase;
-			padding: 1em;
-			&:hover {
-				background: #d63031;
-				color: variables.$texto;
-				transition: background-color 1s ease-out;
-				outline: 0;
-			}
-			&:focus {
-				background: #d63031;
-				color: variables.$texto;
-				transition: background-color 1s ease-out;
-				outline: 0;
-			}
-		}
-		input {
-			width: 100%;
-			padding: .7em;
-			border: none;
-			background: none;
-			outline: 0;
-			color: variables.$texto;
-			border-bottom: 1px solid #d63031;
-		}
-		textarea {
-			width: 100%;
-			padding: .7em;
-			border: none;
-			background: none;
-			outline: 0;
-			color: variables.$texto;
-			border-bottom: 1px solid #d63031;
-		}
-	}
+	
 }
 .Titulo_Nombre {
 	display: block;

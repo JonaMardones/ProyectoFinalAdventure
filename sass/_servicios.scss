@@ -1,11 +1,9 @@
 @use 'variables';
 
-/*Servicios*/
-
 #TituloServicios {
-	background-color: rgba(13, 27, 48, 0.705);
+	background-color: rgba(6, 14, 26, 0.788);
 	color: variables.$texto;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 	text-align: center;
 	margin-bottom: 30px;
 	margin-top: 10px;
@@ -13,7 +11,7 @@
 
 .ConteServ {
 	width: 100%;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 	padding-top: 0px;
 	display: flex;
 	flex-wrap: wrap;
@@ -25,7 +23,7 @@
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 580px;
 	height: 335px;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
@@ -33,20 +31,26 @@
 }
 
 .ContenidoLate {
-	width: 700px;
-	height: 400px;
+	width: 90%;
+	height: 100%;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	justify-content: space-around;
 	text-align: center;
 }
+.ContenidoBajo{
+	display: flex;
+	align-content: center;
+	justify-items: center;
+}
 
 .Late1 {
 	width: 300px;
 	height: 350px;
 	background-color: rgba(31, 30, 30, 0.842);
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 }
 
 #imagenlate1 {
@@ -74,7 +78,7 @@ p#Texto-Paisajes {
 	width: 300px;
 	height: 350px;
 	background-color: rgba(31, 30, 30, 0.842);
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 }
 
 h3#Titulo-Natu {
@@ -95,7 +99,7 @@ p#Texto-Natu {
 .Servicios1 {
 	width: 100%;
 	height: 350px;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 	padding-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -110,7 +114,7 @@ p#Texto-Natu {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 }
 
 #imagenlibros {
@@ -133,7 +137,7 @@ p#Texto-Cuadernos {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 }
 
 #ImgModelo {
@@ -156,7 +160,7 @@ p#Texto-Modelo {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 }
 
 #ImgExpo {
@@ -179,7 +183,7 @@ p#Texto-Exposiciones {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	border-radius: 30px;
+	/*border-radius: 30px;*/
 }
 
 #bebes {
