@@ -1,6 +1,36 @@
 @use 'variables';
 
-
+.titulo_Contacto {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+	position: relative;
+	font-size: 3vw;
+	text-transform: uppercase;
+  }
+  
+  .titulo_Contacto::before {
+	content: attr(data-text);
+	position: absolute;
+	height: 60px;
+	color: variables.$texto;
+	-webkit-text-stroke: 0vw;
+	border-right: 2px solid variables.$texto;
+	overflow: hidden;
+	animation: animate 5s linear infinite;
+  }
+  @keyframes animate {
+	0% {
+	  width: 0;
+	}
+	50% {
+	  width: 70%;
+	}
+	90% {
+	  width: 100%;
+	}
+  }
 .Conten_Contact {
 	max-width: 1170px;
 	margin-left: auto;

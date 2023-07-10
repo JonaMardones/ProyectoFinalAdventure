@@ -7,7 +7,6 @@ body {
 
 .header {
   background-color: rgba(33, 37, 41, 0.95);
-  /*border-radius: 30px;*/
 }
 
 #logo {
@@ -16,6 +15,11 @@ body {
   font-family: "Permanent Marker", cursive;
   font-size: 2em;
   color: #ff851B;
+}
+
+#logo:hover {
+  color: #fff;
+  animation: animlog 0.8s linear infinite;
 }
 
 @keyframes animlog {
@@ -119,7 +123,6 @@ body {
     gap: 0;
     flex-direction: column;
     background-color: rgba(6, 14, 26, 0.788);
-    /*border-radius: 30px;*/
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -131,10 +134,42 @@ body {
     left: 0;
   }
 }
+.titulo_subti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  position: relative;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.titulo_subti::before {
+  content: attr(data-text);
+  position: absolute;
+  height: 60px;
+  color: #fff;
+  -webkit-text-stroke: 0vw;
+  border-right: 2px solid #fff;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 70%;
+  }
+  90% {
+    width: 100%;
+  }
+}
 span {
   font-family: "Permanent Marker", cursive;
   font-size: 1em;
-  color: #fff;
+  color: #ff851B;
 }
 
 .contenedor {
@@ -144,20 +179,17 @@ span {
   background-color: rgba(245, 245, 220, 0.233);
   height: 500px;
   width: 100%;
-  /*border-radius: 30px;*/
 }
 
 #ima1 {
   width: 100%;
   height: 500px;
-  /*border-radius: 30px 0px 0px 30px;*/
 }
 
 .conte {
   width: 400px;
   height: 500;
   background-color: rgba(6, 14, 26, 0.788);
-  /*border-radius: 0px 30px 30px 0px;*/
 }
 
 #saludo {
@@ -239,6 +271,44 @@ span {
   grid-row-start: span 2;
 }
 
+.box-ima {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.box-ima:after, .box-ima:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 0.5s;
+}
+.box-ima:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+.box-ima:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+.box-ima:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.box-ima:hover:before, .box-ima:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
 .Fig_Gale {
   width: 100%;
   height: 100%;
@@ -275,6 +345,38 @@ span {
   }
   .Ima_Gale {
     height: 200px;
+  }
+}
+.titulo_Contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  position: relative;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.titulo_Contacto::before {
+  content: attr(data-text);
+  position: absolute;
+  height: 60px;
+  color: #fff;
+  -webkit-text-stroke: 0vw;
+  border-right: 2px solid #fff;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 70%;
+  }
+  90% {
+    width: 100%;
   }
 }
 .Conten_Contact {
@@ -411,11 +513,14 @@ span {
   background-color: rgba(31, 30, 30, 0.842);
   width: 580px;
   height: 335px;
-  /*border-radius: 30px;*/
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.iframegrande:hover {
+  transform: scale(0.98);
 }
 
 .ContenidoLate {
@@ -439,12 +544,23 @@ span {
   width: 300px;
   height: 350px;
   background-color: rgba(31, 30, 30, 0.842);
-  /*border-radius: 30px;*/
+}
+
+.Late1:hover {
+  transform: scale(0.98);
 }
 
 #imagenlate1 {
   width: 250px;
   border: 10px solid white;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#imagenlate1:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 h3#Titulo-Paisaje {
@@ -461,13 +577,24 @@ p#Texto-Paisajes {
 #imagenlate2 {
   width: 250px;
   border: 10px solid white;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#imagenlate2:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 .Late2 {
   width: 300px;
   height: 350px;
   background-color: rgba(31, 30, 30, 0.842);
-  /*border-radius: 30px;*/
+}
+
+.Late2:hover {
+  transform: scale(0.98);
 }
 
 h3#Titulo-Natu {
@@ -488,7 +615,6 @@ p#Texto-Natu {
 .Servicios1 {
   width: 100%;
   height: 350px;
-  /*border-radius: 30px;*/
   padding-left: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -503,12 +629,23 @@ p#Texto-Natu {
   background-color: rgba(31, 30, 30, 0.842);
   width: 300px;
   height: 300px;
-  /*border-radius: 30px;*/
+}
+
+.cuadernos:hover {
+  transform: scale(0.98);
 }
 
 #imagenlibros {
   width: 250px;
   border: 10px solid white;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#imagenlibros:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 h3#Titulo-Cuadernos {
@@ -526,12 +663,23 @@ p#Texto-Cuadernos {
   background-color: rgba(31, 30, 30, 0.842);
   width: 300px;
   height: 300px;
-  /*border-radius: 30px;*/
+}
+
+.Modelo:hover {
+  transform: scale(0.98);
 }
 
 #ImgModelo {
   width: 250px;
   border: 10px solid white;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#ImgModelo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 h3#Titulo-Modelo {
@@ -549,12 +697,23 @@ p#Texto-Modelo {
   background-color: rgba(31, 30, 30, 0.842);
   width: 300px;
   height: 300px;
-  /*border-radius: 30px;*/
+}
+
+.exposiciones:hover {
+  transform: scale(0.98);
 }
 
 #ImgExpo {
   width: 250px;
   border: 10px solid white;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#ImgExpo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 h3#Titulo-Exposiciones {
@@ -572,12 +731,23 @@ p#Texto-Exposiciones {
   background-color: rgba(31, 30, 30, 0.842);
   width: 300px;
   height: 300px;
-  /*border-radius: 30px;*/
+}
+
+.bebes:hover {
+  transform: scale(0.98);
 }
 
 #bebes {
   width: 250px;
   border: 10px solid white;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#bebes:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 h3#Titulo-Bebe {
@@ -620,7 +790,6 @@ p#Texto-Bebe {
     flex-wrap: wrap;
   }
 }
-/*******SOBRE NOSOTROS*******/
 ul {
   z-index: 1;
 }
@@ -628,7 +797,6 @@ ul {
 .contenido-titulo {
   text-align: center;
   background-color: rgba(6, 14, 26, 0.788);
-  /*border-radius: 30px;*/
   margin-top: 20px;
   color: #fff;
 }
@@ -636,21 +804,18 @@ ul {
 .slider1 {
   width: 100%;
   height: 500px;
-  /*border-radius: 30px;*/
   margin-bottom: 10px;
 }
 
 .slider2 {
   width: 100%;
   height: 500px;
-  /*border-radius: 30px;*/
   margin-bottom: 10px;
 }
 
 .slider3 {
   width: 100%;
   height: 500px;
-  /*border-radius: 30px;*/
   margin-bottom: 10px;
 }
 
@@ -662,12 +827,10 @@ ul {
   background-color: rgba(6, 14, 26, 0.788);
   text-align: center;
   color: #fff;
-  /*border-radius: 30px;*/
 }
 
 .Texto_Aventuras {
   background-color: rgba(6, 14, 26, 0.788);
-  /*border-radius: 30px;*/
   height: 100px;
   margin-bottom: 30px;
 }
@@ -700,6 +863,10 @@ ul {
   }
 }
 @media screen and (max-width: 500px) {
+  .carousel-inner {
+    width: 384px;
+    height: 217px;
+  }
   .Texto_Aventuras_P {
     font-size: 13px;
     margin-top: 0;

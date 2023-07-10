@@ -1,33 +1,28 @@
 @use 'variables';
 
-/*******SOBRE NOSOTROS*******/
-
 ul{
 	z-index: 1;
 }
+
 .contenido-titulo{
 	text-align: center;
 	background-color: rgba(6, 14, 26, 0.788);
-	/*border-radius: 30px;*/
 	margin-top: 20px;
 	color: variables.$texto;
 }
 .slider1 {
 	width: 100%;
 	height: 500px;
-	/*border-radius: 30px;*/
 	margin-bottom: 10px;
 }
 .slider2 {
 	width: 100%;
 	height: 500px;
-	/*border-radius: 30px;*/
 	margin-bottom: 10px;
 }
 .slider3 {
 	width: 100%;
 	height: 500px;
-	/*border-radius: 30px;*/
 	margin-bottom: 10px;
 }
 .Titulo_A {
@@ -37,11 +32,9 @@ ul{
 	background-color: rgba(6, 14, 26, 0.788);
 	text-align: center;
 	color: variables.$texto;
-	/*border-radius: 30px;*/
 }
 .Texto_Aventuras {
 	background-color: rgba(6, 14, 26, 0.788);
-	/*border-radius: 30px;*/
 	height: 100px;
 	margin-bottom: 30px;
 }
@@ -72,7 +65,10 @@ ul{
 	}
 }
 @media screen and (max-width:500px) {
-	
+	.carousel-inner{
+		width: 384px;
+		height: 217px;
+	}
 	.Texto_Aventuras_P {
 		font-size: 13px;
 		margin-top: 0;

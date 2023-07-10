@@ -23,11 +23,13 @@
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 580px;
 	height: 335px;
-	/*border-radius: 30px;*/
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.iframegrande:hover{
+	transform: scale(0.98);
 }
 
 .ContenidoLate {
@@ -40,7 +42,8 @@
 	justify-content: space-around;
 	text-align: center;
 }
-.ContenidoBajo{
+
+.ContenidoBajo {
 	display: flex;
 	align-content: center;
 	justify-items: center;
@@ -50,13 +53,24 @@
 	width: 300px;
 	height: 350px;
 	background-color: rgba(31, 30, 30, 0.842);
-	/*border-radius: 30px;*/
+}
+.Late1:hover{
+	transform: scale(0.98);
 }
 
 #imagenlate1 {
 	width: 250px;
 	border: 10px solid white;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;
 }
+
+#imagenlate1:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
+}
+
 
 h3#Titulo-Paisaje {
 	color: variables.$texto;
@@ -72,13 +86,24 @@ p#Texto-Paisajes {
 #imagenlate2 {
 	width: 250px;
 	border: 10px solid white;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;
 }
+
+#imagenlate2:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
+}
+
 
 .Late2 {
 	width: 300px;
 	height: 350px;
 	background-color: rgba(31, 30, 30, 0.842);
-	/*border-radius: 30px;*/
+}
+.Late2:hover{
+	transform: scale(0.98);
 }
 
 h3#Titulo-Natu {
@@ -99,7 +124,6 @@ p#Texto-Natu {
 .Servicios1 {
 	width: 100%;
 	height: 350px;
-	/*border-radius: 30px;*/
 	padding-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -114,12 +138,21 @@ p#Texto-Natu {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	/*border-radius: 30px;*/
+}
+.cuadernos:hover{
+	transform: scale(0.98);
 }
 
 #imagenlibros {
 	width: 250px;
 	border: 10px solid white;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+#imagenlibros:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
 }
 
 h3#Titulo-Cuadernos {
@@ -137,12 +170,21 @@ p#Texto-Cuadernos {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	/*border-radius: 30px;*/
+}
+.Modelo:hover{
+	transform: scale(0.98);
 }
 
 #ImgModelo {
 	width: 250px;
 	border: 10px solid white;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+#ImgModelo:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
 }
 
 h3#Titulo-Modelo {
@@ -160,12 +202,21 @@ p#Texto-Modelo {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	/*border-radius: 30px;*/
+}
+.exposiciones:hover{
+	transform: scale(0.98);
 }
 
 #ImgExpo {
 	width: 250px;
 	border: 10px solid white;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+#ImgExpo:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
 }
 
 h3#Titulo-Exposiciones {
@@ -183,12 +234,21 @@ p#Texto-Exposiciones {
 	background-color: rgba(31, 30, 30, 0.842);
 	width: 300px;
 	height: 300px;
-	/*border-radius: 30px;*/
+}
+.bebes:hover{
+	transform: scale(0.98);
 }
 
 #bebes {
 	width: 250px;
 	border: 10px solid white;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+#bebes:hover {
+	transform: scale(1.1);
+	filter: grayscale(0%);
 }
 
 h3#Titulo-Bebe {
@@ -204,31 +264,34 @@ p#Texto-Bebe {
 
 @media screen and (max-width: 1000px) {
 	.ContenidoLate {
-	  /*width: 90%;*/
-	  width: calc(90%)-10;
-	  height: 10%;
-	  margin: 2%;
-	  grid-template-columns: repeat(2, 1fr);
-	  grid-gap: 10px;
-	  grid-template-rows: 20px;
-	  flex-wrap: wrap;
-	  margin-bottom: 30px;
-	  margin-top: 10px;
+		/*width: 90%;*/
+		width: calc(90%)-10;
+		height: 10%;
+		margin: 2%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		grid-template-rows: 20px;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		margin-top: 10px;
 	}
-	#Titulo-Paisaje{
+
+	#Titulo-Paisaje {
 		font-size: 20px;
 	}
-	#Titulo-Natu{
+
+	#Titulo-Natu {
 		font-size: 20px;
 	}
-	.Servicios1{
-	  width: 90%;
-	  height: 10%;
-	  margin: 2%;
-	  grid-template-columns: repeat(2, 1fr);
-	  grid-gap: 10px;
-	  grid-template-rows: 0px;
-	  flex-wrap: wrap;
-	 
+
+	.Servicios1 {
+		width: 90%;
+		height: 10%;
+		margin: 2%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		grid-template-rows: 0px;
+		flex-wrap: wrap;
+
 	}
-  }
+}
